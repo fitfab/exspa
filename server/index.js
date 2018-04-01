@@ -19,7 +19,7 @@ const dev = app.get("env") !== "production";
 // Run Production setup
 if (!dev) {
   // disable `x-power-by` header for security reasons
-  // that way people don't that server is power express.
+  // that way people don't know that server is power by express.
   app.disable("x-power-by");
 
   // Compression middleware for gzip
